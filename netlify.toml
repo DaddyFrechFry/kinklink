@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # This is a Vite + React app, not Next.js. The Next.js plugin is enabled in
+  # the site's UI settings and fails the build, so tell it to skip itself.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
